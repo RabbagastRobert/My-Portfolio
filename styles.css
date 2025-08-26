@@ -41,6 +41,10 @@ h2 {
   color: var(--col-title-1);
 }
 
+.inset {
+  margin-left: 2em;
+}
+
 /* BODY */
 
 body {
@@ -96,6 +100,10 @@ main {
   flex-direction: column;
   flex-grow: 1;
   gap: 2em;
+}
+
+main p {
+  margin-top: 1em;
 }
 
 /* FOOTER */
