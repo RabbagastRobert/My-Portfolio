@@ -1,0 +1,107 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+/* ROOT */
+
+:root {
+  --col-back-1: #1d212c;
+  --col-back-2: #2a304e;
+  --col-back-2h: #323f64;
+  --col-front-1: #61aec8;
+  --col-front-2: #3d5e6b;
+  --col-link-1: #9ca5b1;
+  --col-link-1h: #88d29e;
+  --col-title-1: #dbba6e;
+  height: 100%;
+}
+
+/* DEFAULT */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--col-link-1);
+}
+
+a:hover {
+  color: var(--col-link-1h);
+}
+
+p {
+  margin: 1em 0;
+}
+
+h1,
+h2 {
+  color: var(--col-title-1);
+}
+
+/* BODY */
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5em;
+  color: var(--col-front-1);
+  background-color: var(--col-back-1);
+  font-family: 'Courier Prime', monospace;
+}
+
+/* HEADER */
+
+header ul {
+  margin: 1em 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  list-style: none;
+}
+
+header ul li {
+  display: flex;
+  height: 1.8em;
+  align-items: center;
+  padding: 0.6em;
+  gap: 0.5em;
+  border: 1px solid;
+  border-radius: 0.5em;
+  background-color: var(--col-back-2);
+}
+
+header ul li:hover {
+  background-color: var(--col-back-2h);
+}
+
+header ul li img {
+  width: 2em;
+  height: 2em;
+  filter: grayscale(100%) brightness(2000%) sepia(50%) saturate(300%)
+    hue-rotate(160deg);
+}
+
+header ul li:hover img {
+  filter: grayscale(100%) brightness(2000%) sepia(50%) saturate(300%)
+    hue-rotate(60deg);
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 2em;
+}
+
+/* FOOTER */
+footer {
+  align-self: center;
+  font-size: small;
+  color: var(--col-front-2);
+  margin: 1em 0;
+}
