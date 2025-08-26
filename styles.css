@@ -5,14 +5,14 @@
 /* ROOT */
 
 :root {
-  --col-back-1: #1d212c;
+  --col-back-1: #171922;
   --col-back-2: #2a304e;
   --col-back-2h: #323f64;
-  --col-front-1: #61aec8;
-  --col-front-2: #3d5e6b;
+  --col-front-1: #8eadb7;
+  --col-front-2: #4d575c;
   --col-link-1: #9ca5b1;
   --col-link-1h: #88d29e;
-  --col-title-1: #dbba6e;
+  --col-title-1: #cba75a;
   height: 100%;
 }
 
@@ -60,11 +60,16 @@ body {
 /* HEADER */
 
 header ul {
-  margin: 1em 0;
+  margin: 1em 0 2em 0;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 1em;
   list-style: none;
+}
+
+header ul > * {
+  flex: 1 1 0;
 }
 
 header ul li {
@@ -85,13 +90,12 @@ header ul li:hover {
 header ul li img {
   width: 2em;
   height: 2em;
-  filter: grayscale(100%) brightness(2000%) sepia(50%) saturate(300%)
-    hue-rotate(160deg);
+  filter: invert() brightness(50%) sepia(50%) saturate(300%) hue-rotate(160deg);
 }
 
 header ul li:hover img {
-  filter: grayscale(100%) brightness(2000%) sepia(50%) saturate(300%)
-    hue-rotate(60deg);
+  filter: invert() brightness(60%) sepia(50%) saturate(300%)
+    hue-rotate(65deg);
 }
 
 /* MAIN */
@@ -104,6 +108,11 @@ main {
 
 main p {
   margin-top: 1em;
+}
+
+#hero img {
+  max-width: 100%;
+  max-height: 50vh;
 }
 
 /* FOOTER */
